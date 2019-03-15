@@ -1,0 +1,82 @@
+body {
+    font-size: 16px;
+    width: 80%;
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+    margin: 10px auto 0px;
+}
+
+.score {
+    display: table;
+    table-layout: fixed;
+    width: 80%;
+    font-size: 1.5rem;
+    text-align: right;
+}
+
+.score-item {
+    display: table-cell;
+}
+
+.button-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#start-button {
+    margin-right: 20px;
+}
+
+#vsHuman,
+#vsCPU {
+    font-size: 1.25rem;
+}
+
+.start-button,
+.vsHuman-label,
+.vsCPU-label,
+.reset-button,
+.pass-button:hover {
+    cursor: pointer;
+}
+
+#pass-button {
+    display: none;
+}
+
+#reset-button {
+    display: none;
+    margin-right: 20px;
+}
+
+#board {
+    border: 10px;
+    border-style: solid;
+    color: #000;
+    width: 60%;
+    margin: 10px auto 20px;
+    text-align: center;
+}
+
+#black,
+#white {
+    width: 40px;
+    height: 40px;
+}
+
+.cell {
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: #00ff00;
+    border: 1px;
+    border-style: solid;
+    color: black;
+}
+
+.sample {
+    display: none;
+}

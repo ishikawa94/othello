@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="ja">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <!--  css-->
+    <link rel="stylesheet" type="text/css" href="css/app.css">
+    <!--  vue.js-->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <!--    jQuery-->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <title>JavaScript-Othello!</title>
+</head>
+
+<body>
+    <h1>JavaScript_Othello</h1>
+    <ul class="score">
+        <li class="score-item">BLACK:<span id="black-number"></span></li>
+        <li class="score-item">WHITE:<span id="white-number"></span></li>
+        <li class="score-item">player<span id="color"></span></li>
+    </ul>
+    <div class="button-list">
+        <div id="start-button">
+            <input type="button" name="GAMESTART" value="GAMESTART" onclick="init();" class="start-button">
+        </div>
+        <div id="vsHuman">
+            <label for="vsHuman-button" class="vsHuman-label"><input type="radio" id="vsHuman-button" name="game-mode" value="Human" checked>人対人</label>
+        </div>
+        <div id="vsCPU">
+            <label for="vsCPU-button" class="vsCPU-label"><input type="radio" id="vsCPU-button" name="game-mode" value="CPU">人対CPU</label>
+        </div>
+        <div id="reset-button"><input type="button" value="RESET" onclick="location.reload();" class="reset-button"></div>
+        <div id="pass-button"><input type="button" value="PASS" onclick="pass();" class="pass-button">
+        </div>
+    </div>
+    <div class="sample">
+        <div id="none"></div><img src="image/black2.png" id="black"><img src="image/white.png" id="white">
+    </div>
+    <table id="board"></table>
+    <script type="text/javascript" src="js/app.js"></script>
+</body>
+
+</html>
